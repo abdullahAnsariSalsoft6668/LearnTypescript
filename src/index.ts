@@ -334,3 +334,62 @@
 // pointPartial.age = 1;
 
 // console.log("PointPartial :", pointPartial);
+
+// 2- Required:
+// interface Car {
+//   make: string;
+//   model: string;
+//   mileage?: number;
+// }
+
+// let myCar: Required<Car> = {
+//   make: "Ford",
+//   model: "Focus",
+//   mileage: 12000, // `Required` forces mileage to be defined
+// };
+
+// 3- Record:
+// const nameAgeMap: Record<string, number> = {
+//   Alice: 21,
+//   Bob: 25,
+// };
+
+// console.log(nameAgeMap);
+
+// 4- Omit :
+// Removes keys from an object type.
+// interface ObjectType {
+//   name: string;
+//   age: number;
+//   location: string;
+// }
+
+// const bob: Omit<ObjectType, "name" | "location"> = {
+//   age: 22,
+// };
+
+// console.log(bob);
+
+// 5- Pick :
+// Remove all keys but the specified of the object type
+
+// interface ObjectType {
+//   name: string;
+//   age: number;
+//   location: string;
+// }
+
+// const pickObj: Pick<ObjectType, "location"> = {
+//   location: "Pak",
+// };
+
+// console.log("Location :", location);
+
+// 6- Exclude :
+// Remove types from union
+
+// type Primitives = string | number | boolean;
+// // This syntax to remove union types from union types
+// const removeTypeUsingExclude: Exclude<Primitives, number> = 20; // Its through error because i remove number type and I assign it number
+
+// console.log("Number :", removeTypeUsingExclude);

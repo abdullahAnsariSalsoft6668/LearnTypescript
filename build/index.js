@@ -1,5 +1,5 @@
 // let firstName: string = "Dylan";
 // console.log(firstName);
-var pointPartial = {};
-pointPartial.name = "John";
-console.log("PointPartial :", pointPartial);
+// This syntax to remove union types from union types
+var removeTypeUsingExclude = 20;
+console.log("Number :", removeTypeUsingExclude);
