@@ -1,5 +1,11 @@
 // let firstName: string = "Dylan";
 // console.log(firstName);
-// This syntax to remove union types from union types
-var removeTypeUsingExclude = 20;
-console.log("Number :", removeTypeUsingExclude);
+var printStudentProperties = function (studentObj, studentSingleProperty) {
+    console.log("Student Properties : ".concat(studentObj, " && ").concat(studentSingleProperty));
+};
+var obj = {
+    name: "John",
+    class: 12,
+};
+printStudentProperties(obj, "name");
+//Null Chordya filhal

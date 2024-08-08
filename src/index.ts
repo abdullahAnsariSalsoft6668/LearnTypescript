@@ -393,3 +393,26 @@
 // const removeTypeUsingExclude: Exclude<Primitives, number> = 20; // Its through error because i remove number type and I assign it number
 
 // console.log("Number :", removeTypeUsingExclude);
+
+// Key of:
+// Key of help us the print the value of key obj
+
+// interface student {
+//   name: string;
+//   class: number;
+// }
+
+// let printStudentProperties = (
+//   studentObj: student,
+//   studentSingleProperty: keyof student
+// ) => {
+//   console.log(`Student Properties : ${studentObj} && ${studentSingleProperty}`);
+// };
+
+// let obj = {
+//   name: "John",
+//   class: 12,
+// };
+// printStudentProperties(obj, "name"); // Obj, John
+
+//Null Chordya filhal
